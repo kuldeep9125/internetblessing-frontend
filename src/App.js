@@ -8,6 +8,7 @@ import VideosPage from './pages/VideosPage';
 import ProductsPage from './pages/ProductsPage';
 import DashboardPage from './pages/DashboardPage';
 import AuthPage from './pages/AuthPage';
+import AutomationPage from './pages/AutomationPage';
 
 // Components
 import Navigation from './components/Navigation';
@@ -52,6 +53,7 @@ function App() {
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/auth" element={<AuthPage setToken={setToken} setUser={setUser} />} />
             <Route path="/dashboard" element={token ? <DashboardPage user={user} /> : <Navigate to="/auth" replace />} />
+            <Route path="/automation" element={<AutomationPage />} />
           </Routes>
         </main>
 

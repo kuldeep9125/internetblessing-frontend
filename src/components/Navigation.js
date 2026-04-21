@@ -12,6 +12,7 @@ function Navigation({ token, user, onLogout }) {
         <Link to="/videos">Videos</Link>
         <Link to="/products">Courses</Link>
         {token && <Link to="/dashboard">Dashboard</Link>}
+        <Link to="/automation" style={{ color: '#a78bfa' }}>⚙️ Pipeline</Link>
         {token ? (
           <>
             <span>{user?.username}</span>
